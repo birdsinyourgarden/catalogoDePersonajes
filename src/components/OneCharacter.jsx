@@ -16,7 +16,7 @@ function OneCharacter() {
     <>
     <div key={character.id}>
       <h1>{character.name}</h1>
-      <img src={character.image} alt={character.name}/>
+      <img className='pic' src={character.image} alt={character.name}/>
       <h3>Species: {character.species}</h3>
       <h3>Gender: {character.gender}</h3>
       <h3>Status: {character.status}</h3>

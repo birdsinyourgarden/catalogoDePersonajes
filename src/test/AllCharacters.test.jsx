@@ -11,12 +11,13 @@ beforeEach(()=>{
     )
 })
 
-test('get charachterListImg', async () =>{
+test('get characterListImg', async () =>{
     const characterImg = await screen.findByRole('img');
     expect(characterImg).toBeInTheDocument();
+    /* screen.debug(); */
 })
 
-test('get charachterListImg', async () =>{
-    const characterImg = await screen.findByRole('img');
-    expect(characterImg).toBeInTheDocument();
+test('get characterListName', async () =>{
+    const characterName = await screen.findByText(/Rick Sanchez/i);
+    expect(characterName).toBeInTheDocument();
 })

@@ -17,6 +17,7 @@ useEffect(() =>{
             return(
                 <div key={character.id}>
                     <Link to={`/character/${character.id}`}><img src={character.image} alt={character.name} className='pic'/></Link>
+                    <p>{character.name}</p>
                 </div>
             )
         })}

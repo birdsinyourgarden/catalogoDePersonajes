@@ -6,8 +6,9 @@ import RickandMortyLogo from './RickandMortyLogo.png';
 
 function App() {
   return (
-    <div className="App">
-      <img src={RickandMortyLogo} alt='Logotipo Rick and Morty' className='logo'/>
+    <div className='App'>
+      <img className='logo' src={RickandMortyLogo} alt='Logotipo Rick and Morty' />
+      <h1>Lista de personajes</h1>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<AllCharacters/>}></Route>
